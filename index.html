@@ -190,6 +190,7 @@
 
         <div class="qr-container" id="qrContainer">
             <div id="qrcode"></div>
+            <p class="encoded-url" id="encodedUrl" style="font-size: 0.75rem; color: #888; word-break: break-all; margin-bottom: 15px; padding: 10px; background: #eee; border-radius: 6px;"></p>
             <div class="download-buttons">
                 <button class="download-btn" onclick="downloadQR('png')">Download PNG</button>
                 <button class="download-btn" onclick="downloadQR('jpeg')">Download JPEG</button>
@@ -235,8 +236,9 @@
 
             currentURL = url;
 
-            // Create interstitial URL
-            const interstitialURL = `interstitial.html?target=${encodeURIComponent(url)}`;
+            // Create interstitial URL (uses relative path - works on any host)
+            const currentOrigin = window.location.origin;
+            const interstitialURL = `${currentOrigin}/interstitial.html?target=${encodeURIComponent(url)}`;
 
             // Show loader
             loader.style.display = 'block';
@@ -257,6 +259,9 @@
                     colorLight: '#ffffff',
                     correctLevel: QRCode.CorrectLevel.H
                 });
+
+                // Display encoded URL for verification
+                document.getElementById('encodedUrl').textContent = 'QR encodes: ' + interstitialURL;
 
                 // Hide loader, show QR
                 loader.style.display = 'none';

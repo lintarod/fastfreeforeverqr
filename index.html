@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3421161937035475"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3421161937035475" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast. Free. Forever. QR Codes — No Signup Required.</title>
+    <title>Free QR Code Generator — No Signup, No Limits, Forever Free</title>
+    <meta name="description" content="Create free QR codes instantly. No signup, no payment, no limits. Perfect for restaurant menus, weddings, business cards, events, and more. Download as PNG, SVG, or JPEG.">
+    <meta name="keywords" content="free QR code generator, QR code maker, create QR code free, no signup QR code, permanent QR code, restaurant menu QR code, wedding QR code, event QR code, business card QR code">
+    <meta name="author" content="fastfreeforeverqr.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fastfreeforeverqr.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free QR Code Generator — No Signup, No Limits, Forever Free">
+    <meta property="og:description" content="Create free QR codes instantly. No signup, no payment, no limits. Download as PNG, SVG, or JPEG.">
+    <meta property="og:url" content="https://fastfreeforeverqr.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fast Free Forever QR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free QR Code Generator — No Signup, No Limits, Forever Free">
+    <meta name="twitter:description" content="Create free QR codes instantly. No signup, no payment, no limits.">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Fast Free Forever QR Code Generator",
+        "url": "https://fastfreeforeverqr.com",
+        "description": "Create free QR codes instantly with no signup, no payment, and no limits. QR codes last forever.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "No signup required",
+            "No payment required",
+            "Unlimited QR codes",
+            "Permanent QR codes that never expire",
+            "Download as PNG, SVG, or JPEG",
+            "Mobile friendly"
+        ]
+    }
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         * {
@@ -18,10 +61,44 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .badges {
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 20px;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
         .container {
@@ -30,20 +107,21 @@
             padding: 40px;
             max-width: 500px;
             width: 100%;
+            margin: 20px auto;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
 
-        h1 {
+        .container h2 {
             color: #333;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-bottom: 10px;
             line-height: 1.3;
         }
 
         .tagline {
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             font-size: 0.95rem;
         }
 
@@ -147,24 +225,220 @@
             color: white;
         }
 
+        /* Use Cases Section */
+        .use-cases {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .use-cases h2 {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .use-case-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .use-case-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .use-case-card h3 {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .use-case-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .features h2 {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .feature-card .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card h3 {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .how-it-works h2 {
+            color: #333;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .step {
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+
+        .step h3 {
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .faq h2 {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .faq-item h3 {
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
         .footer {
-            margin-top: 30px;
-            color: #999;
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255,255,255,0.7);
             font-size: 0.85rem;
         }
 
         .footer a {
-            color: #667eea;
+            color: white;
             text-decoration: none;
         }
 
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
         @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
             .container {
                 padding: 25px;
             }
 
-            h1 {
-                font-size: 1.4rem;
+            .container h2 {
+                font-size: 1.3rem;
             }
 
             .download-buttons {
@@ -174,16 +448,38 @@
             .download-btn {
                 width: 100%;
             }
+
+            .badges {
+                gap: 10px;
+            }
+
+            .badge {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Free QR Code Generator</h1>
+        <p>Create unlimited QR codes instantly. No signup. No payment. No expiration.</p>
+        <div class="badges">
+            <span class="badge">✓ 100% Free</span>
+            <span class="badge">✓ No Signup</span>
+            <span class="badge">✓ No Limits</span>
+            <span class="badge">✓ Never Expires</span>
+        </div>
+    </section>
+
+    <!-- QR Generator -->
     <div class="container">
-        <h1>Generate Your Free QR Code NOW</h1>
-        <p class="tagline">Fast. Free. Forever. No signup required.</p>
+        <h2>Generate Your QR Code Now</h2>
+        <p class="tagline">Paste any URL and get your QR code in seconds</p>
 
         <div class="input-group">
-            <input type="url" id="urlInput" placeholder="Enter your URL (e.g., https://example.com)" required>
+            <input type="url" id="urlInput" placeholder="Enter your URL (e.g., https://example.com)" required aria-label="Enter URL to generate QR code">
         </div>
 
         <button class="generate-btn" id="generateBtn" onclick="generateQR()">Generate QR Code</button>
@@ -192,19 +488,146 @@
 
         <div class="qr-container" id="qrContainer">
             <div id="qrcode"></div>
-            <p class="encoded-url" id="encodedUrl" style="font-size: 0.75rem; color: #888; word-break: break-all; margin-bottom: 15px; padding: 10px; background: #eee; border-radius: 6px;"></p>
             <div class="download-buttons">
                 <button class="download-btn" onclick="downloadQR('png')">Download PNG</button>
                 <button class="download-btn" onclick="downloadQR('jpeg')">Download JPEG</button>
                 <button class="download-btn" onclick="downloadQR('svg')">Download SVG</button>
             </div>
         </div>
-
-       <div class="footer">
-    <p>Powered by <a href="https://fastfreeforeverqr.com">fastfreeforeverqr.com</a></p>
-    <p style="margin-top: 8px; font-size: 0.75rem;"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
-</div>
     </div>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+        <h2>Perfect for Every Occasion</h2>
+        <div class="use-cases-grid">
+            <article class="use-case-card">
+                <div class="icon">🍽️</div>
+                <h3>Restaurant Menus</h3>
+                <p>Create touchless digital menus for your restaurant, café, or bar. Update your menu anytime without reprinting QR codes.</p>
+            </article>
+            <article class="use-case-card">
+                <div class="icon">💒</div>
+                <h3>Weddings & Events</h3>
+                <p>Share event details, RSVP forms, photo galleries, and gift registries with a simple scan. Perfect for invitations.</p>
+            </article>
+            <article class="use-case-card">
+                <div class="icon">🌳</div>
+                <h3>Garden Parties</h3>
+                <p>Link to party details, directions, playlists, or photo sharing. Make your outdoor events more interactive.</p>
+            </article>
+            <article class="use-case-card">
+                <div class="icon">💼</div>
+                <h3>Business Cards</h3>
+                <p>Add a QR code to your business card linking to your portfolio, LinkedIn, or contact information.</p>
+            </article>
+            <article class="use-case-card">
+                <div class="icon">🏠</div>
+                <h3>Real Estate</h3>
+                <p>Link property listings, virtual tours, and contact forms on for-sale signs and flyers.</p>
+            </article>
+            <article class="use-case-card">
+                <div class="icon">📦</div>
+                <h3>Product Packaging</h3>
+                <p>Connect customers to instructions, warranty registration, reviews, or reorder pages.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Our Free QR Generator?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h3>Instant Generation</h3>
+                <p>Create QR codes in under 2 seconds. No waiting, no processing delays.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">♾️</div>
+                <h3>Unlimited Use</h3>
+                <p>Generate as many QR codes as you need. No daily limits, no restrictions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>No Account Needed</h3>
+                <p>Start creating immediately. No email, no password, no signup forms.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⏳</div>
+                <h3>Never Expires</h3>
+                <p>Your QR codes work forever. No subscriptions to maintain.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Works perfectly on phones, tablets, and desktop computers.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💾</div>
+                <h3>Multiple Formats</h3>
+                <p>Download as PNG, JPEG, or SVG for any use case.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Paste Your URL</h3>
+                <p>Enter any website link, menu, form, or file URL</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Generate</h3>
+                <p>Click the button and your QR code appears instantly</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Download</h3>
+                <p>Save as PNG, JPEG, or SVG and use anywhere</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <article class="faq-item">
+            <h3>Is this QR code generator really free?</h3>
+            <p>Yes, 100% free. No hidden fees, no premium tiers, no credit card required. Generate unlimited QR codes at no cost.</p>
+        </article>
+        <article class="faq-item">
+            <h3>Do I need to create an account?</h3>
+            <p>No signup required. Just paste your URL and generate your QR code immediately. No email, no password, no forms.</p>
+        </article>
+        <article class="faq-item">
+            <h3>Will my QR codes expire?</h3>
+            <p>Never. QR codes created here work forever. There's no subscription to cancel and no expiration date.</p>
+        </article>
+        <article class="faq-item">
+            <h3>What can I use QR codes for?</h3>
+            <p>Anything with a URL: restaurant menus, wedding invitations, business cards, event tickets, product packaging, real estate listings, social media profiles, WiFi passwords, and much more.</p>
+        </article>
+        <article class="faq-item">
+            <h3>What formats can I download?</h3>
+            <p>PNG (best for web and print), JPEG (smaller file size), and SVG (vector format, infinitely scalable for large prints).</p>
+        </article>
+        <article class="faq-item">
+            <h3>Can I use these QR codes for commercial purposes?</h3>
+            <p>Absolutely. Use them for your business, products, marketing materials, or any commercial application at no cost.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 <a href="https://fastfreeforeverqr.com">fastfreeforeverqr.com</a> — Fast. Free. Forever.</p>
+        <p class="footer-links">
+            <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+        </p>
+    </footer>
 
     <script>
         let qrcode = null;
@@ -284,7 +707,6 @@
                 const size = canvas.width;
                 const ctx = canvas.getContext('2d');
                 const imageData = ctx.getImageData(0, 0, size, size);
-                const pixelSize = size / 256 * 4; // Approximate module size
 
                 let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}">`;
                 svg += `<rect width="100%" height="100%" fill="white"/>`;

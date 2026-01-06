@@ -260,9 +260,6 @@
                     correctLevel: QRCode.CorrectLevel.H
                 });
 
-                // Display encoded URL for verification
-                document.getElementById('encodedUrl').textContent = 'QR encodes: ' + interstitialURL;
-
                 // Hide loader, show QR
                 loader.style.display = 'none';
                 qrContainer.style.display = 'block';

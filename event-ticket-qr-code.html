@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3421161937035475" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Event Ticket QR Code Generator | Concerts, Conferences & Parties</title>
+    <meta name="description" content="Create free QR codes for event tickets. Perfect for concerts, conferences, parties, and fundraisers. Link to ticket info, venue details, or check-in pages. No signup required.">
+    <meta name="keywords" content="event ticket QR code, concert ticket QR code, conference QR code, party ticket QR code, event check-in QR code, ticket QR code generator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fastfreeforeverqr.com/event-ticket-qr-code.html">
+    
+    <meta property="og:title" content="Free Event Ticket QR Code Generator">
+    <meta property="og:description" content="Create free QR codes for event tickets, check-ins, and venue information.">
+    <meta property="og:url" content="https://fastfreeforeverqr.com/event-ticket-qr-code.html">
+    
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","name":"Free Event Ticket QR Code Generator","description":"Create free QR codes for event tickets, concerts, conferences, and parties.","url":"https://fastfreeforeverqr.com/event-ticket-qr-code.html"}
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .hero { text-align: center; padding: 40px 20px 20px; max-width: 800px; margin: 0 auto; }
+        .hero h1 { color: white; font-size: 2.2rem; margin-bottom: 15px; }
+        .hero p { color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 600px; margin: 0 auto 20px; line-height: 1.6; }
+        .breadcrumb { text-align: center; margin-bottom: 20px; }
+        .breadcrumb a { color: rgba(255,255,255,0.8); text-decoration: none; }
+        .breadcrumb span { color: rgba(255,255,255,0.6); }
+        .container { background: white; border-radius: 20px; padding: 40px; max-width: 500px; margin: 20px auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; }
+        .container h2 { color: #333; font-size: 1.5rem; margin-bottom: 10px; }
+        .tagline { color: #666; margin-bottom: 25px; }
+        input[type="url"] { width: 100%; padding: 15px 20px; font-size: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; margin-bottom: 20px; }
+        input[type="url"]:focus { border-color: #667eea; }
+        .generate-btn { width: 100%; padding: 15px 30px; font-size: 1.1rem; font-weight: 600; color: white; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 10px; cursor: pointer; }
+        .generate-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(102,126,234,0.4); }
+        .loader { display: none; margin: 30px auto; width: 50px; height: 50px; border: 4px solid #f3f3f3; border-top: 4px solid #667eea; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .qr-container { display: none; margin-top: 30px; padding: 20px; background: #f9f9f9; border-radius: 15px; }
+        #qrcode { display: flex; justify-content: center; margin-bottom: 20px; }
+        .download-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        .download-btn { padding: 10px 20px; font-size: 0.9rem; font-weight: 500; color: #667eea; background: white; border: 2px solid #667eea; border-radius: 8px; cursor: pointer; }
+        .download-btn:hover { background: #667eea; color: white; }
+        .content-section { max-width: 800px; margin: 40px auto; background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .content-section h2 { color: #333; font-size: 1.6rem; margin-bottom: 20px; }
+        .content-section h3 { color: #333; font-size: 1.2rem; margin: 25px 0 10px; }
+        .content-section p { color: #555; line-height: 1.7; margin-bottom: 15px; }
+        .content-section ul { color: #555; margin: 15px 0 15px 25px; line-height: 1.8; }
+        .event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 25px 0; }
+        .event-card { background: #f9f9f9; padding: 20px; border-radius: 12px; text-align: center; }
+        .event-card .icon { font-size: 2rem; margin-bottom: 10px; }
+        .event-card h4 { color: #333; margin-bottom: 8px; }
+        .event-card p { color: #666; font-size: 0.9rem; margin: 0; }
+        .internal-nav { max-width: 800px; margin: 40px auto; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; }
+        .internal-nav h3 { color: white; text-align: center; margin-bottom: 20px; }
+        .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .nav-links a { color: white; text-decoration: none; padding: 8px 16px; background: rgba(255,255,255,0.15); border-radius: 20px; font-size: 0.9rem; }
+        .footer { text-align: center; padding: 40px 20px; color: rgba(255,255,255,0.7); font-size: 0.85rem; }
+        .footer a { color: white; text-decoration: none; }
+        @media (max-width: 480px) { .hero h1 { font-size: 1.7rem; } .container, .content-section { padding: 25px; } .download-buttons { flex-direction: column; } .download-btn { width: 100%; } }
+    </style>
+</head>
+<body>
+    <nav class="breadcrumb"><a href="/">Home</a> <span>›</span> Event Ticket QR Code</nav>
+
+    <header class="hero">
+        <h1>Free Event Ticket QR Code Generator</h1>
+        <p>Create scannable QR codes for any event — concerts, conferences, parties, fundraisers, and more. Speed up check-in and share event details instantly.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Create Your Event QR Code</h2>
+            <p class="tagline">Paste your ticket page, event details, or check-in URL</p>
+            <input type="url" id="urlInput" placeholder="https://eventbrite.com/your-event" required>
+            <button class="generate-btn" onclick="generateQR()">Generate Event QR Code</button>
+            <div class="loader" id="loader"></div>
+            <div class="qr-container" id="qrContainer">
+                <div id="qrcode"></div>
+                <div class="download-buttons">
+                    <button class="download-btn" onclick="downloadQR('png')">Download PNG</button>
+                    <button class="download-btn" onclick="downloadQR('jpeg')">Download JPEG</button>
+                    <button class="download-btn" onclick="downloadQR('svg')">Download SVG</button>
+                </div>
+            </div>
+        </div>
+
+        <article class="content-section">
+            <h2>QR Codes for Every Type of Event</h2>
+            <p>Whether you're organizing a small party or a large conference, QR codes streamline the attendee experience from invitation to check-in.</p>
+            
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="icon">🎵</div>
+                    <h4>Concerts & Shows</h4>
+                    <p>Digital tickets, venue maps, and lineup schedules</p>
+                </div>
+                <div class="event-card">
+                    <div class="icon">💼</div>
+                    <h4>Conferences</h4>
+                    <p>Session schedules, speaker bios, and networking apps</p>
+                </div>
+                <div class="event-card">
+                    <div class="icon">🎉</div>
+                    <h4>Private Parties</h4>
+                    <p>Event details, RSVP forms, and photo sharing</p>
+                </div>
+                <div class="event-card">
+                    <div class="icon">🎗️</div>
+                    <h4>Fundraisers</h4>
+                    <p>Donation pages, auction items, and cause information</p>
+                </div>
+                <div class="event-card">
+                    <div class="icon">🏃</div>
+                    <h4>Races & Sports</h4>
+                    <p>Registration, bib pickup, and course maps</p>
+                </div>
+                <div class="event-card">
+                    <div class="icon">🎓</div>
+                    <h4>Workshops & Classes</h4>
+                    <p>Registration, materials, and instructor info</p>
+                </div>
+            </div>
+
+            <h3>Ways to Use Event QR Codes</h3>
+            <ul>
+                <li><strong>Digital tickets</strong> — Replace paper tickets with scannable QR codes</li>
+                <li><strong>Fast check-in</strong> — Link to your registration system for quick entry</li>
+                <li><strong>Event schedules</strong> — Let attendees access the agenda on their phones</li>
+                <li><strong>Venue directions</strong> — Link to Google Maps for easy navigation</li>
+                <li><strong>Feedback forms</strong> — Collect reviews immediately after sessions</li>
+                <li><strong>Social media</strong> — Let attendees follow your event hashtag or page</li>
+                <li><strong>Wi-Fi access</strong> — Share the venue Wi-Fi password easily</li>
+            </ul>
+
+            <h3>Where to Place Event QR Codes</h3>
+            <ul>
+                <li>Email invitations and e-tickets</li>
+                <li>Printed tickets and badges</li>
+                <li>Event signage and banners</li>
+                <li>Table tents and seat markers</li>
+                <li>Programs and brochures</li>
+                <li>Social media posts and ads</li>
+            </ul>
+
+            <h3>Tips for Event QR Codes</h3>
+            <p><strong>Test your check-in flow:</strong> Before the event, practice scanning with your staff to ensure everything works smoothly.</p>
+            <p><strong>Have a backup:</strong> Always have a manual check-in option in case of technical issues.</p>
+            <p><strong>Size appropriately:</strong> For badges, 0.75" minimum. For signage, scale up so it's scannable from the expected distance.</p>
+            <p><strong>Consider lighting:</strong> QR codes can be hard to scan in very dark venues. Plan accordingly.</p>
+
+            <h3>Completely Free for Any Event Size</h3>
+            <p>Whether you're hosting 10 people or 10,000, our QR code generator is completely free. No per-ticket fees, no scan limits, no expiration dates. Create as many codes as you need for every aspect of your event.</p>
+        </article>
+
+        <nav class="internal-nav">
+            <h3>Other QR Code Uses</h3>
+            <div class="nav-links">
+                <a href="/">QR Code Generator</a>
+                <a href="/restaurant-menu-qr-code.html">Restaurant Menus</a>
+                <a href="/wedding-qr-code.html">Weddings</a>
+                <a href="/business-card-qr-code.html">Business Cards</a>
+                <a href="/real-estate-qr-code.html">Real Estate</a>
+                <a href="/product-packaging-qr-code.html">Product Packaging</a>
+            </div>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 <a href="https://fastfreeforeverqr.com">fastfreeforeverqr.com</a> — Fast. Free. Forever.</p>
+        <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        let qrcode = null;
+        function generateQR() {
+            const urlInput = document.getElementById('urlInput');
+            const loader = document.getElementById('loader');
+            const qrContainer = document.getElementById('qrContainer');
+            const qrcodeDiv = document.getElementById('qrcode');
+            let url = urlInput.value.trim();
+            if (!url) { alert('Please enter a URL'); return; }
+            if (!url.match(/^https?:\/\//i)) { url = 'https://' + url; }
+            try { new URL(url); } catch (e) { alert('Please enter a valid URL'); return; }
+            const currentOrigin = window.location.origin;
+            const interstitialURL = `${currentOrigin}/interstitial.html?target=${encodeURIComponent(url)}`;
+            loader.style.display = 'block';
+            qrContainer.style.display = 'none';
+            setTimeout(() => {
+                qrcodeDiv.innerHTML = '';
+                qrcode = new QRCode(qrcodeDiv, { text: interstitialURL, width: 256, height: 256, colorDark: '#000000', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.H });
+                loader.style.display = 'none';
+                qrContainer.style.display = 'block';
+            }, 800);
+        }
+        function downloadQR(format) {
+            const canvas = document.querySelector('#qrcode canvas');
+            if (!canvas) { alert('Please generate a QR code first'); return; }
+            const link = document.createElement('a');
+            if (format === 'svg') {
+                const size = canvas.width;
+                const ctx = canvas.getContext('2d');
+                const imageData = ctx.getImageData(0, 0, size, size);
+                let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}"><rect width="100%" height="100%" fill="white"/>`;
+                for (let y = 0; y < size; y += 4) { for (let x = 0; x < size; x += 4) { const i = (y * size + x) * 4; if (imageData.data[i] < 128) { svg += `<rect x="${x}" y="${y}" width="4" height="4" fill="black"/>`; } } }
+                svg += '</svg>';
+                link.href = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+                link.download = 'event-ticket-qrcode.svg';
+            } else {
+                link.href = canvas.toDataURL(format === 'png' ? 'image/png' : 'image/jpeg', 1.0);
+                link.download = `event-ticket-qrcode.${format}`;
+            }
+            link.click();
+        }
+        document.getElementById('urlInput').addEventListener('keypress', function(e) { if (e.key === 'Enter') generateQR(); });
+    </script>
+</body>
+</html>
